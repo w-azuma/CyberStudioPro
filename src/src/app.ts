@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
-import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
+//import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 
 
 
@@ -29,7 +29,7 @@ class CyberStudioPro {
   private vuLamps: THREE.Mesh[] = [];
   private woofers: { mesh: THREE.Mesh, initialZ: number }[] = [];
   private monitorScreens: { mesh: THREE.Mesh, ctx: CanvasRenderingContext2D, tex: THREE.CanvasTexture, type: string }[] = [];
-  private knobs: THREE.Group[] = []; // 今のところ未使用、あとで光らせる予定
+  //private knobs: THREE.Group[] = []; // 今のところ未使用、あとで光らせる予定
 
   // 音楽連動用。ファイルを読み込むまではnullのまま→animate側でsin波にフォールバックする
   private audioCtx: AudioContext | null = null;
